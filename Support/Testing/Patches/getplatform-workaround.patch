@@ -6,7 +6,7 @@ index f7da58b..dd1cec6 100644
  
  def getPlatform():
      """Returns the target platform which the tests are running on."""
-+    return "linux"
++    return "android"
      platform = lldb.DBG.GetSelectedPlatform().GetTriple().split('-')[2]
      if platform.startswith('freebsd'):
          platform = 'freebsd'

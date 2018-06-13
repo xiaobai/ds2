@@ -218,7 +218,6 @@ if [[ "${PLATFORM-}" = "1" ]]; then
     working_dir="/data/local/tmp"
     if ! $opt_no_ds2_blacklists; then
       args+=("--excluded" "$blacklist_dir/ds2/android.blacklist")
-      args+=("--excluded" "$blacklist_dir/ds2/android_invalid_tests.blacklist")
     fi
   fi
 
